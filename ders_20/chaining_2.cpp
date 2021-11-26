@@ -6,6 +6,13 @@ public:
     Printer(std::ostream& pstream) : m_stream(pstream) {}
 
     template <typename T>
+    Printer& print(const T& t)
+    {
+        m_stream << t << ' ';
+        return *this;
+    }
+
+    template <typename T>
     Printer& print_line(const T& t)
     {
         m_stream << t << '\n';
@@ -38,5 +45,5 @@ using namespace std;
 
 int main()
 {
-    ConsolePrinter().print_line("Necati ").set_color(12).print_line("Ergin"); // invalid
+    ConsolePrinter().print("Necati ").set_color(12).print_line("Ergin"); // invalid
 }
