@@ -13,7 +13,7 @@ public:
     }
 
     template <typename T>
-    Printer& println(const T& t)
+    Printer& print_line(const T& t)
     {
         m_stream << t << '\n';
         return *this;
@@ -29,5 +29,5 @@ using namespace std;
 
 int main()
 {
-    Printer(cout).print("necati ").println("ergin");
+    Printer(cout).print("necati ").print_line("ergin");
 }
