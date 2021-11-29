@@ -10,7 +10,8 @@ std::optional<int> to_int(std::string_view);
 
 + _to\_int_ fonksiyonu aldığı _std::string\_view_'da tutulan yazının ifade ettiği (10'luk sayı sisteminde)  tam sayı değerini döndürmeli.
 + Yazı geçerli bir tamsayı ifade etmiyorsa fonksiyon boş bir (_nullopt_ değerinde) _optional_ nesnesi döndürmeli 
-+ yazının başında boşluk _(white space)_ karakterleri olabilir. 
++ Yazının başında boşluk _(white space)_ karakterleri olabilir. 
++ Tanımladığınız fonksiyonda C++ standart kütüphanesinin tüm öğelerini kullanabilirsiniz.
 + Yazdığınız fonksiyonu aşağıdaki string literalleri ile test edebilirsiniz: <br>
 
 "986235" ==> 986235 <br>
