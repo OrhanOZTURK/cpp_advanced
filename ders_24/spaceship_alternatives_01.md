@@ -1,4 +1,4 @@
-+ Source </emsp></emsp>Alternative</emsp></emsp>Alternative 2
++ Source <emsp><emsp>Alternative</emsp></emsp>Alternative 2
 + a == b</emsp></emsp>b == a	 
 + a != b</emsp></emsp>!(a == b)</emsp></emsp>!(b == a)
 + a <=> b         0 <=> (b <=> a)	 
