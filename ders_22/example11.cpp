@@ -17,7 +17,7 @@ int main()
 
 	variant<Data, int> va; //Error
 	
-	variant<monostate, Data, int, double> vy;
+	variant<monostate, Data, int, double> vy; // valid
 	std::cout << "index = " << vy.index() << '\n'; // 0
 	
 	if (holds_alternative<monostate>(vy)) 
