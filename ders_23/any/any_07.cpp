@@ -11,11 +11,11 @@ int main()
 
 	try {
 		auto& r = any_cast<int&>(x);
-		std::cout << r << '\n';
+		cout << r << '\n';
 	}
 	catch (const bad_any_cast& ex)
 	{
-		std::cout << "exception caught: " << ex.what() << '\n';
+		cout << "exception caught: " << ex.what() << '\n';
 	}
 
 	//--------------------------------------------------------------------
@@ -24,26 +24,26 @@ int main()
 
 	any_cast<string&>(y).append("can");
 
-	std::cout << any_cast<string>(y) << "\n";
+	cout << any_cast<string>(y) << "\n";
 
 	//--------------------------------------------------------------------
 
 	any a;
 
-	std::cout << boolalpha;
+	cout << boolalpha;
 
-	std::cout << a.has_value() << "\n"; // false
+	cout << a.has_value() << "\n"; // false
 
 	a = 45;
-	std::cout << a.has_value() << "\n"; // true
+	cout << a.has_value() << "\n"; // true
 
 	a.reset();
-	std::cout << a.has_value() << "\n"; // false
+	cout << a.has_value() << "\n"; // false
 
 	a = true;
-	std::cout << a.has_value() << "\n"; // true
+	cout << a.has_value() << "\n"; // true
 
 	a = {};
-	std::cout << a.has_value() << "\n"; // false
+	cout << a.has_value() << "\n"; // false
 
 }
