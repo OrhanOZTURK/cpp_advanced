@@ -1,17 +1,17 @@
-#include<iostream>
-#include<variant>
-#include<string>
-#include"Date.h"
+#include <iostream>
+#include <variant>
+#include <string>
+#include "date.h"
 
 int main()
 {
 	using namespace std;
 
-	variant<Date, int, double, string> vx; // valid
-	vx = "Ali";			       // valid
-	get<0>(vx) = Date{ 1,5,1987 };	       // valid
-	get<Date>(vx) = Date{ 1,5,1987 };      // valid
-	cout << get<Date>(vx) << "\n";         // valid
-	cout << get<float>(vx);		       // Error.Float doesn't exist
-	cout << get<4>(vx);		       // Error.Index error
+	variant<Date, int, double, string> vx; // geçerli
+	vx = "Ali";			       // geçerli - alternatif string
+	get<0>(vx) = Date{ 1,5,1987 };	       // geçerli
+	get<Date>(vx) = Date{ 1,5,1987 };      // geçerli
+	cout << get<Date>(vx) << "\n";         // geçerli
+	// cout << get<float>(vx);	      // geçersiz. float bir alternatif değil
+	cout << get<4>(vx);		       // geçersiz. index 4 yok
 }
