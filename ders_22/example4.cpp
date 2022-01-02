@@ -1,6 +1,6 @@
-#include<iostream>
-#include<string>
-#include<optional>
+#include <iostream>
+#include <string>
+#include <optional>
 
 class UserRecord
 {
@@ -29,7 +29,7 @@ private:
 int main()
 {
 	UserRecord urx = { "Salih Korkusuz", "Salih",40 };
-	std::cout << urx << "\n";
+	std::cout << urx << '\n';
 	UserRecord ury = { "Necati Ergin", std::nullopt,std::nullopt };
-	std::cout << ury << "\n";
+	std::cout << ury << '\n';
 }
