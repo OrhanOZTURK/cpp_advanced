@@ -1,5 +1,5 @@
-#include<iostream>
-#include<variant>
+#include <iostream>
+#include <variant>
 
 int main()
 {
