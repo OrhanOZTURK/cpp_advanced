@@ -1,8 +1,8 @@
-#include<iostream>
-#include<variant>
-#include<utility>
-#include<algorithm>
-#include<vector>
+#include <iostream>
+#include <variant>
+#include <utility>
+#include <algorithm>
+#include <vector>
 
 using namespace std;
 class Cat {
