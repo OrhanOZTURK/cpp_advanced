@@ -4,12 +4,10 @@
 
 int main()
 {
-	using namespace std;
+	std::variant<int, double, std::string> vx{ "Mustafa Ceyhan" };
 
-	variant<int, double, string> vx{ "Mustafa Ceyhan" };
-
-	if (auto p = get_if<string>(&vx))   
-	{								 
+	if (auto p = get_if<std::string>(&vx))
+	{
 		std::cout << *p << "\n";
 	}
 	else
