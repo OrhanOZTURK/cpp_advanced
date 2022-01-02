@@ -1,5 +1,4 @@
-#include<iostream>
-#include<variant>
+#include <variant>
 
 class Myclass
 {
@@ -9,9 +8,11 @@ public:
 
 	}
 };
+
 int main()
 {
 	using namespace std;
-	//variant<Myclass, int, double> vx;  // Syntax Error
-	variant<int, Myclass, double> vy;  // Valid
+
+	//variant<Myclass, int, double> vx;  // geçersiz - default ctor yok
+	variant<int, Myclass, double> vy;  // geçerli
 }
