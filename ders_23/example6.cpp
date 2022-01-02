@@ -15,7 +15,7 @@ roots get_roots(double a, double b, double c)
 	}
 	if (!delta)
 	{
-		return -b / 2. / a;			// -b / (2. * a) ; ile aynı
+		return -b / 2. / a;
 	}
 	return std::monostate{};
 }
