@@ -1,18 +1,15 @@
-#include<iostream>
-#include<variant>
-
+#include <iostream>
+#include <variant>
 
 int main()
 {
-	using namespace std;
+	std::variant<std::string, int, double, std::string> vx;
 
-	variant<string, int, double, string> vx;
+	vx.emplace<0>("murat");		
+	std::cout << get<0>(vx) << "\n";
 
-	vx.emplace<0>("murat");		//valid
-	cout << get<0>(vx) << "\n"; //valid
+	//std::cout << get<string>(vx) << "\n"; // Ambigiuty 
 
-	std::cout << get<string>(vx) << "\n"; // Ambigiuty 
-
-	vx.emplace<3>("aksoy");			 //valid
-	std::cout << get<3>(vx) << "\n"; //valid
+	vx.emplace<3>("aksoy");			 
+	std::cout << get<3>(vx) << "\n"; 
 }
