@@ -1,6 +1,6 @@
-#include<iostream>
-#include<vector>
-#include<variant>
+#include <iostream>
+#include <vector>
+#include <variant>
 
 
 class Circle {
@@ -10,6 +10,7 @@ public:
 		std::cout << "circle is being rendered\n";
 	}
 };
+
 class Square {
 public:
 	void render()
@@ -17,6 +18,7 @@ public:
 		std::cout << "Square is being rendered\n";
 	}
 };
+
 class Triangle {
 public:
 	void render()
@@ -24,6 +26,7 @@ public:
 		std::cout << "Triangle is being rendered\n";
 	}
 };
+
 class Polygon {
 public:
 	void render()
@@ -44,7 +47,7 @@ int main()
 	svec.emplace_back(Triangle{});
 	svec.emplace_back(Polygon{});
 
-	
+
 	for (auto& object : svec)
 	{
 		visit([](auto& object) {object.render(); }, object);
