@@ -13,5 +13,4 @@ int main()
 
 	vx = 5L;
 	std::cout << vx.index() << '\n'; // 2
-
 }
