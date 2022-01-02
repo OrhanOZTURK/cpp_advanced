@@ -15,6 +15,7 @@ public:
 private:
 	std::string m_name;
 };
+
 class Dog {
 public:
 	Dog(std::string name) : m_name{ std::move(name) } { }
@@ -25,6 +26,7 @@ public:
 private:
 	std::string m_name;
 };
+
 class Lamb {
 public:
 	Lamb(std::string name) : m_name{ std::move(name) } { }
@@ -35,14 +37,16 @@ public:
 private:
 	std::string m_name;
 };
+
 using Animal = std::variant<Dog, Cat, Lamb>;
-// HOLDS ALTERNATIVE I TEMPLATE HALE GETIRDIK.
+
 template <typename T>
 bool is_type(const Animal& a)
 {
 	return std::holds_alternative<T>(a);
 }
-//VISITER OLUŞTURALIM
+
+//VISITER
 struct AnimalVoice {
 	void operator()(Dog& dog)const {
 		dog.bark();
@@ -54,10 +58,11 @@ struct AnimalVoice {
 		lamb.bleat();
 	}
 };
+
 int main()
 {
 	vector<Animal> avec{ Cat{"pamuk"},Dog{"soko"}, Lamb{"kuzucuk"},Dog{"Kont"}, Lamb{"minnak"}, Dog{"lili"} };
-	//switch case ile yaptık aslında Visit bunu kendi içinde yapıyor.
+	
 	for (Animal& a : avec)
 	{
 		switch (a.index()) // variantın index functionu bu
@@ -67,8 +72,9 @@ int main()
 		case 2: get<Lamb>(a).bleat(); break; //
 		}
 	}
+	
 	std::cout << "\n*********************************************************\n";
-	//GET_IF İLE YAPIYORUZ.
+	
 	for (Animal& a : avec)
 	{
 		if (auto dog_ptr = get_if<Dog>(&a)) //girmezse nullptr olacak dog_ptr
@@ -85,12 +91,13 @@ int main()
 		}
 	}
 	std::cout << "\n*********************************************************\n";
+	
 	for (Animal& a : avec)
 	{
 		visit(AnimalVoice{}, a);
 	}
 	std::cout << "\n*********************************************************\n";
-	std::cout << count_if(begin(avec), end(avec), is_type<Dog>) << " tane kopek var\n"; // is type ı yukarılarda tanımlamıştık
+	std::cout << count_if(begin(avec), end(avec), is_type<Dog>) << " tane kopek var\n"; 
 	std::cout << count_if(begin(avec), end(avec), is_type<Lamb>) << " tane kuzu var\n";
 	std::cout << count_if(begin(avec), end(avec), is_type<Cat>) << " tane kedi var\n";
 	std::cout << "\n*********************************************************\n";
