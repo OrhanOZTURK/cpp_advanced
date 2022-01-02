@@ -8,7 +8,7 @@ int main()
 
 	any x{ 3 };
 
-	x.reset(); // it also calls destructor for class objects
+	x.reset(); 
 
 	if (x.has_value())
 	{
