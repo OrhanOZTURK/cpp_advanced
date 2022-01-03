@@ -23,7 +23,7 @@ template<typename T>
 struct Nec {
 	using Ptr = PointerTrait<T>::Ptr; //Invalid at C++17.Valid in C++20.
 
-	T::Neco foo(T::Ali x) //valid
+	T::Neco foo(T::Ali x) //C++20. Valid
 	{						
 
 	}
