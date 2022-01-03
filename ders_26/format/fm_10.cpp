@@ -13,5 +13,5 @@ int main()
 		format_to(back_inserter(str), "{{{0}, {0:d}}}\n", c); 
 	}
 
-	std::cout << str << "\n";
+	cout << str << "\n";
 }
