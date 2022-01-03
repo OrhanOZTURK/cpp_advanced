@@ -10,6 +10,6 @@ struct Nec {
 
 	T::Neco foo(T::Ali x)
 	{
-		return static_cast<T::Neco>(x); //Valid
+		return static_cast<T::Neco>(x); //C++20. Valid
 	}
 };
