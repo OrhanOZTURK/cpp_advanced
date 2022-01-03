@@ -3,7 +3,6 @@
 #include <string>
 #include <list>
 
-
 int main()
 {
 	using namespace std;
@@ -21,7 +20,7 @@ int main()
 
 	list<char> clist;
 
-	format_to(front_inserter(clist), "|{} {} {:.2f}|", id, name, dval); 
+	format_to(front_inserter(clist), "|{} {} {:.2f}|", id, name, dval);
 
 	for (auto c : clist)
 		cout << c;		// |12.45 yoskA ilA 54987|
