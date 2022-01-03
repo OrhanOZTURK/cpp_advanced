@@ -1,8 +1,8 @@
-#include<iostream>
-#include<format>
-#include<iterator>
-#include<fstream>
-#include<cmath>
+#include <iostream>
+#include <format>
+#include <iterator>
+#include <fstream>
+#include <cmath>
 
 int main()
 {
@@ -11,9 +11,9 @@ int main()
 
 	int x = 47802;
 	format_to(ostream_iterator<char>(cout), "|{:>16X}|", x); // |		BABA|
-	
+
 	//-------------------------------------------------------------------------------------------- -
-		
+
 	ofstream ofs{ "output.txt" };
 
 	if (!ofs)
