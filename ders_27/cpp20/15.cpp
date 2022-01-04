@@ -1,9 +1,8 @@
-#include <iostream>
-
 template <typename T>
 struct PointerTrait {
 	using Ptr = void*;
 };
+
 template<typename T>
 struct Nec {
 	using Ptr = PointerTrait<T>::Ptr;
