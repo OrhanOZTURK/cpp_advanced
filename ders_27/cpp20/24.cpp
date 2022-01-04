@@ -1,5 +1,3 @@
-#include <iostream>
-
 template<typename T>
 struct Nec {
 	explicit(false) Nec(T); // C++20. Constructor is not explicit
