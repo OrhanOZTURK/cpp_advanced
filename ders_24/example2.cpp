@@ -4,7 +4,7 @@ class Mint
 {
 public:
     Mint(int x = 0) : mx(x) { }
-    bool operator==(const Mint &other)const = default;
+    bool operator==(const Mint &other)const = default; //C++20
 private:
     int mx;
 };
