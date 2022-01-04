@@ -1,5 +1,3 @@
-#include <iostream>
-
 struct Data {
 public:
 	Data(Data&&) noexcept(false);
