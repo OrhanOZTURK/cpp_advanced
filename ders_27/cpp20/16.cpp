@@ -1,5 +1,3 @@
-#include <iostream>
-
 template <typename T>
 struct PointerTrait {
 	using Ptr = void*;
