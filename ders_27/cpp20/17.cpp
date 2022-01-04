@@ -1,5 +1,3 @@
-#include <iostream>
-
 namespace A::B::inline C    //C++20
 { 
 	void func();
