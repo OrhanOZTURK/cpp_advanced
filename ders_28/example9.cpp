@@ -1,5 +1,5 @@
 template <typename T>
-requires requires(T x)		//valid
+requires requires(T x)		//valid syntax
 {
     x + x;
 }
