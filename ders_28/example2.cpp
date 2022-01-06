@@ -2,7 +2,9 @@ template<typename T>
 class Tclass{
 };
 
-struct A{};
+struct A{
+};
+
 template<typename T>
 concept nec = requires {
     typename Tclass<T>;
