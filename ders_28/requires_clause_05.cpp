@@ -1,6 +1,3 @@
-#include <concepts>
-#include <iostream>
-
 template <typename T>
 concept nec = requires(T a, T b)
 {
@@ -9,5 +6,5 @@ concept nec = requires(T a, T b)
 
 int main()
 {
-    static_assert(nec<int*>); // Valid
+    static_assert(nec<int*>); // valid
 };
