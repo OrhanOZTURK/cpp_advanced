@@ -17,6 +17,7 @@ void func(T x)
         std::cout << "other type\n";
     }
 }
+
 int main()
 {
     func(12);  //valid
