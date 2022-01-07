@@ -2,11 +2,11 @@
 #include <iostream>
 
 template<std::integral T>
-class Tclass{
+class Tclass {
 
 };
 
-struct A{};
+struct A {};
 
 template<typename T>
 concept Nec = requires {
@@ -15,6 +15,6 @@ concept Nec = requires {
 
 int main()
 {
-    static_assert(Nec<int>); // Valid
-    //static_assert(Nec<A>);  // Syntax Error
+    static_assert(Nec<int>); // valid
+    static_assert(Nec<A>);  // invalid
 }
