@@ -1,3 +1,5 @@
+#include <concepts>
+
 template<typename T, std::convertible_to<T> auto x>
 class Myclass{
 
