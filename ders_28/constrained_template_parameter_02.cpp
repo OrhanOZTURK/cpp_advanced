@@ -1,5 +1,4 @@
 #include <concepts>
-#include <iostream>
 
 template<std::convertible_to<int> T>
 class Myclass
