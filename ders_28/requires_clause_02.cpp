@@ -1,8 +1,8 @@
 template<typename T>
-class Tclass{
+class Tclass {
 };
 
-struct A{
+struct A {
 };
 
 template<typename T>
@@ -12,6 +12,6 @@ concept nec = requires {
 
 int main()
 {
-    static_assert(nec<int>); // Valid
-    static_assert(nec<A>); // Valid
+    static_assert(nec<int>); // valid
+    static_assert(nec<A>); // valid
 }
