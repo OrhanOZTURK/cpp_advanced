@@ -1,3 +1,4 @@
+
 template<typename C>
 concept nec = requires{
     typename C::value_type;
@@ -10,13 +11,13 @@ struct A
 
 template <typename T>
 requires nec<T>
-class Myclass{
+class Myclass {
 
 };
 
 int main()
 {
-    Myclass<int> x; // Syntax Error
+    //Myclass<int> x; // Syntax Error
 
     Myclass<A> x; // Valid
 }
