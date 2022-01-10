@@ -25,7 +25,4 @@ int main()
 
 	std::cout << distance(ivec.begin(), iter1) << '\n'; // index 3 
 	std::cout << distance(ivec.begin(), iter2) << '\n'; // index 6. -1 index
-
-	for (auto i : ivec)
-		std::cout << i << ' ';
 }
