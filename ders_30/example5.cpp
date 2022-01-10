@@ -11,5 +11,5 @@ int main()
 	ranges::sort(ivec, {}, [](int x) { return std::abs(x); });
 
 	for (auto i : ivec)
-		std::cout << i << ' ';
+		std::cout << i << ' '; 	// -1 3 5 6 9 -9 12 24 -41 218
 }
