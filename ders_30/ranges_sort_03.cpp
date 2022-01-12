@@ -1,13 +1,12 @@
-#include <iostream>
 #include <vector>
-#include <algorithm>
 #include <bitset>
 #include <random>
-
-using namespace std;
+#include <algorithm>
+#include <iostream>
 
 int main()
 {
+	using namespace std;
 	vector<bitset<32>> bvec;
 	mt19937 eng(random_device{}());
 
