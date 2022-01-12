@@ -4,7 +4,7 @@
 
 int main()
 {
-	vector ivec{ 12, 5, 218, 9, 3, 24, -1, -9, -41, 6 };
+	std::vector ivec{ 12, 5, 218, 9, 3, 24, -1, -9, -41, 6 };
 
 	std::ranges::sort(ivec, {}, [](int x) { return std::abs(x); });
 
