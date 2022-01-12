@@ -14,13 +14,15 @@ struct Payslip
 	int id;
 };
 
-using namespace std;
+
 
 int main()
 {
+	using namespace std;
+
 	vector<Employee> evec(100);
 	vector<Payslip> pvec(100);
-
+	// code
 	ranges::sort(evec, {}, &Employee::id);
 
 	ranges::sort(pvec, {}, &Payslip::id);
