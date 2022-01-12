@@ -13,8 +13,8 @@ struct Employee {
 
 	auto operator<=> (const Employee&)const = default;
 
-	std::string m_name;  // Buradaki bildirimler ne sırada ise spaceship o sırada karşılaştırma kodu üretir
-	std::string m_surname;	// surname üstte olsaydı surname e göre sıralanacaktı
+	std::string m_name;  
+	std::string m_surname;
 	int mid{};
 };
 
