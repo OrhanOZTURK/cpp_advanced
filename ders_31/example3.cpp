@@ -13,7 +13,7 @@ int main()
 
 	ranges::subrange sr1{ ivec }; // Ctad 
 
-	cout << "sizeof(sr1) = " << sizeof(sr1) << '\n'; // 8
+	cout << "sizeof(sr1) = " << sizeof(sr1) << '\n';
 
 	sr1.front(); //valid
 	sr1.back(); //valid
