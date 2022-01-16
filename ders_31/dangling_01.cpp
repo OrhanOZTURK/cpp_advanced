@@ -13,8 +13,8 @@ int main()
 	print(ivec);
 
 	auto iter1 = ranges::min_element(ivec);
-	std::cout << "min = " << *iter1 << " iter = " << iter1 - ivec.begin() << '\n';
+	cout << "min = " << *iter1 << " iter = " << iter1 - ivec.begin() << '\n';
 
 	auto iter2 = ranges::min_element(vector{ 1,2,3,4,5 }); // vector{1,2,3,4,5} is rvalue expr.
-	std::cout << "min = " << *iter2 << " iter = " << iter1 - ivec.begin() << '\n'; // Undefined behavior
+	cout << "min = " << *iter2 << " iter = " << iter1 - ivec.begin() << '\n'; // invalid => *iter2
 }
