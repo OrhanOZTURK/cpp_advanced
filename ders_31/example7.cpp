@@ -1,16 +1,12 @@
-#include <iostream>
-#include <ranges>
 #include <vector>
-#include "nutility.h"
-
+#include <ranges>
+#include <iostream>
 
 int main()
 {
-	using namespace std;
-	vector ivec{ 1,2,3,4,5,15,25,40,60 };
+	std::vector ivec{ 1, 2, 3, 4, 5, 15, 25, 40, 60 };
 
-	for (auto i : views::drop(ivec, 5))
-	{
+	for (auto i : std::views::drop(ivec, 5)) {
 		std::cout << i << ' ';  //15 25 40 60
 	}
 }
