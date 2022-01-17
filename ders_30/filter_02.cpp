@@ -1,8 +1,7 @@
-#include<iostream>
-#include<ranges>
-#include<string>
-#include"nutility.h"
-
+#include <vector>
+#include <string>
+#include "nutility.h" //rname, print
+#include <ranges>
 
 int main()
 {
@@ -14,6 +13,5 @@ int main()
 	print(svec);
 
 	for (const auto& s : views::filter(svec, [](const auto& s) { return s.length() % 2 == 0; }))
-		std::cout << s << '\n'; // Uzunluğu çift olanlar yazılacak
-
+		cout << s << '\n'; // Uzunluğu çift olanlar yazılacak
 }
