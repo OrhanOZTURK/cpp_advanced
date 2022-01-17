@@ -1,8 +1,7 @@
-#include<iostream>
-#include<ranges>
-#include<string>
-#include"nutility.h"
-
+#include <vector>
+#include <string>
+#include "nutility.h" //rfill, print
+#include <ranges>
 
 int main()
 {
@@ -12,12 +11,6 @@ int main()
 	rfill(svec, 30, rname);
 	print(svec);
 
-	char c;
-
-	std::cout << "icinde hangi karkaterler olanlar : ";
-	std::cin >> c;
-
 	for (const auto& s : views::transform(svec, [](const auto& s) { return s + "can"; }))
-		std::cout << s << '\n'; // kelimelerin sonuna can eklendi.
-
+		cout << s << '\n'; // dolasirken isimlerin sonuna 'can' eklendi.
 }
