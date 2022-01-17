@@ -1,8 +1,7 @@
-#include<iostream>
-#include<ranges>
-#include<string>
-#include"nutility.h"
-
+#include <vector>
+#include <string>
+#include "nutility.h" //rfill, print
+#include <ranges>
 
 int main()
 {
@@ -16,6 +15,6 @@ int main()
 
 	for (const auto& s : svec | views::filter(pred) | views::take(10))  // take ilk 10 taneyi alıyor
 	{
-		std::cout << s << '\n';
+		cout << s << '\n';
 	}
 }
