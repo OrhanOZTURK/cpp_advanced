@@ -1,23 +1,24 @@
-#include <iostream>
-#include <ranges>
-#include <vector>
 #include <list>
 #include <string>
-#include <iomanip>
 #include "nutility.h"
-
-using namespace std;
+#include <iostream>
+#include <ranges>
+#include <iomanip>
 
 int main()
 {
+	using namespace std;
+
 	list<string> slist;
-	rfill(slist, 20, rname);
-	
-	print(slist);
+
+	rfill(slist, 20, rname); //listeye 20 tane rastgele isim ekleniyor nutility.h
+	print(slist); //nutility.h
 	size_t len;
-	std::cout << "uzunluk değeri girin: ";
+	cout << "uzunluk değeri girin: ";
 	cin >> len;
-	
-	auto v = views::drop_while(slist, [len](const string& s) {return s.size() > len; });
-	ranges::for_each(v, [](const auto& s) { std::cout << quoted(s) << " "; });
+
+	auto v = views::drop_while(slist, 
+		[len](const string& s) {return s.size() > len; });
+	ranges::for_each(v, 
+		[](const auto& s) {cout << quoted(s) << " "; });
 }
