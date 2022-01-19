@@ -37,9 +37,6 @@ int main()
 
 OUTPUT
 ------
-
-ÇIKTI
------
 X(int i) i = 0
 Y(int i) i = 0
 Z(int i) i = 0
