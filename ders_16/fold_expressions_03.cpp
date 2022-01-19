@@ -3,11 +3,12 @@
 template <typename ...TS>
 auto leftfunc(TS ...args)
 {
-    return (... , args);  //
+    return (... , args);  
 }
 
 int main()
 {
     std::cout << std::boolalpha;
-    std::cout << typeid(leftfunc()).name(); // Void 
+
+    std::cout << typeid(leftfunc()).name(); // void 
 }
