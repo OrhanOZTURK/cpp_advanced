@@ -10,5 +10,5 @@ int main()
 {
     std::cout << std::boolalpha;
 
-    std::cout << leftfunc(); // Valid code
+    std::cout << leftfunc(); // valid code => 0
 }
