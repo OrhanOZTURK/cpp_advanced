@@ -19,7 +19,7 @@ struct Nec {
         return t == other.t && u == other.u;
     }
 
-    bool operator==(const Nec& other)
+    bool operator<(const Nec& other)
     {
         if (t < other.t)
             return true;
