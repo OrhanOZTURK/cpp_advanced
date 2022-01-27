@@ -20,3 +20,4 @@ int main()
         cout << val << ' ';
     }
 }
+//umut kotankıran tarafından aktarıldı
