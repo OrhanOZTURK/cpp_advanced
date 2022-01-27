@@ -41,3 +41,4 @@ int main()
     std::cout << elem << '\n';
 }
 
+//umut kotankıran tarafından aktarıldı
