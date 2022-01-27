@@ -9,3 +9,4 @@ int main()
 {
         decltype(std::declval<Myclass>().func()) x{}; // valid
 }
+//umut kotankıran tarafından aktarıldı
