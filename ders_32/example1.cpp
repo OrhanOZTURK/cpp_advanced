@@ -6,3 +6,4 @@ int main()
 {
 	Myclass<5.5> x; 
 }
+//umut kotankıran tarafından aktarıldı
