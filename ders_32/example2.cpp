@@ -7,3 +7,4 @@ int main()
 {
   Myclass<double> x;
 }
+//umut kotankıran tarafından aktarıldı
