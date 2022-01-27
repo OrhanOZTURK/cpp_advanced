@@ -16,3 +16,4 @@ int main()
     constexpr auto c = is_palindrome("parahaziramarizaharap"); //  true
     constexpr auto d = is_palindrome("ananacidedenededicanana"); //  true
 }
+//umut kotankıran tarafından aktarıldı
