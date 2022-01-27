@@ -36,3 +36,4 @@ int main()
     cout << "val = " << val2 << '\n';  // -90
 
 }
+//umut kotankıran tarafından aktarıldı
