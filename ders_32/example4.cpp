@@ -8,3 +8,4 @@ int main()
 {
     Myclass<int,10L> x; // Valid. Visual studio has bug
 }
+//umut kotankıran tarafından aktarıldı
