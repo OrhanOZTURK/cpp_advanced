@@ -6,43 +6,43 @@
 #include<iostream>
 #include<memory>
 
-class USingleton {
+class Singleton {
 private:
 	struct Deleter {
-		void operator()(USingleton* p);
+		void operator()(Singleton* p);
 	};
 
-	inline static std::unique_ptr<USingleton, Deleter> mp_instance; 
-	USingleton();
-	~USingleton();
+	inline static std::unique_ptr<Singleton, Deleter> mp_instance;
+	Singleton();
+	~Singleton();
 public:
-	static USingleton& get_instance();
-	USingleton(const USingleton&) = delete;
-	USingleton& operator=(const USingleton&) = delete;
+	static Singleton& get_instance();
+	Singleton(const Singleton&) = delete;
+	Singleton& operator=(const Singleton&) = delete;
 	void foo();
 };
 
-void USingleton::Deleter::operator()(USingleton* p)
+void Singleton::Deleter::operator()(Singleton* p)
 {
 	delete p;
 }
-PRIVATE USingleton::USingleton()
+PRIVATE Singleton::Singleton()
 {
 	//..
 }
-USingleton::~USingleton()
+Singleton::~Singleton()
 {
 	std::cout << "destructor caled\n";
 }
-STATIC USingleton& USingleton::get_instance()
+STATIC Singleton& Singleton::get_instance()
 {
 	if (!mp_instance)
 	{
-		mp_instance.reset(new USingleton); 
+		mp_instance.reset(new Singleton);
 	}
 	return *mp_instance;
 }
-void USingleton::foo()
+void Singleton::foo()
 {
 
 }
