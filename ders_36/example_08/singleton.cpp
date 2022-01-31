@@ -4,15 +4,15 @@
 #define PRIVATE
 #define STATIC
 std::once_flag flag;
-STATIC TSingleton& TSingleton::instance()
+STATIC Singleton& Singleton::instance()
 {
 	std::call_once(flag, []() { mp_instance = new TSingleton; }); 
 	return *mp_instance;
 }
-void TSingleton::foo()
+void Singleton::foo()
 {
 }
-PRIVATE TSingleton::TSingleton()
+PRIVATE Singleton::Singleton()
 {
 	//..
 }
