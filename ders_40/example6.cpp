@@ -6,6 +6,7 @@ void foo()
     std::cout << "foo cagrilir\n";
     throw;
 }
+
 void func()
 {
     try{
@@ -17,6 +18,7 @@ void func()
         foo();
     }
 }
+
 int main()
 {
     try
