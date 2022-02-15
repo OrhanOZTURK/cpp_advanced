@@ -9,7 +9,7 @@ void func()
     catch(const std::exception& ex)
     {
         std::cout << "hata func icinde yakalandi : " << ex.what() << '\n';
-        throw ex; // Object Slicing. Dinamik tür korunmaz
+        //throw ex; // Object Slicing. Dinamik tür korunmaz
 
         throw;   // exception rethrow. Dinamik tür korunur
     }
