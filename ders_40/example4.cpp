@@ -14,18 +14,18 @@ public:
 class Nec
 {
 public:
-    Nec() try : mx{12}
+    Nec() try : mx{ 12 }
     {
 
     }
-    catch(int)
+    catch (int)
     {
         std::cout << "exception caught\n";
 
         //// .. Burada hiçbir şey yapılmazsa exception rethrow eder.
-        throw;  // Burada da yukarıdaki gibi exception rethrow eder.
+        //throw;  // Burada da yukarıdaki gibi exception rethrow eder.
 
-        throw std::runtime_error{"member exception"}; // Başka bir exception gönderildi
+        throw std::runtime_error{ "member exception" }; // Başka bir exception gönderildi
     }
 private:
     Member mx;
@@ -33,5 +33,12 @@ private:
 
 int main()
 {
-    Nec mynec;
+    try
+    {
+        Nec mynec;
+    }
+    catch (const std::exception& ex)
+    {
+        std::cout << ex.what();
+    }
 }
