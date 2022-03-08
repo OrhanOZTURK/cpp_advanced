@@ -10,7 +10,9 @@ int main()
 	cout << "y = " << y << '\n';
 	cout << "z = " << z << '\n';
 	cout << "t = " << t << '\n';
+	
 	std::cout << "------\n";
+	
 	tie(x, y, z, t) = tuple{ y,z,t,x }; 
 	cout << "x = " << x << '\n';
 	cout << "y = " << y << '\n';
