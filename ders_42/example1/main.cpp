@@ -10,3 +10,8 @@ void func()
 	Pizza* p = new Veggie{ "vegpizza" };
 	p->prepare();	
 }
+
+int main()
+{
+
+}
