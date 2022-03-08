@@ -62,3 +62,9 @@ int main()
 	g.run();
 	t.run();
 }
+
+OUTPUT
+------
+Hello World!
+Halo Welt!
+Merhaba Dunya!
