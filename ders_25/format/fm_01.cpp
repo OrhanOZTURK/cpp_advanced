@@ -5,7 +5,7 @@ int main()
 {
 	using namespace std;
 	std::cout << std::format("Ali Aksoy C++ programcisidir") << "\n";
-	
+
 	//----------------------------------------------------------------------------------------------
 
 	int x = 23;
@@ -17,7 +17,7 @@ int main()
 	string name1{ "Necati" };
 	int cnt1{ 20 };
 
-	std::cout << std::format("{} kisisinin {} kitabi var", name1, cnt1) << "\n";  // Necati kisisinin 20 kitabi var
+	std::cout << std::format("{} isimli kisinin {} kitabi var", name1, cnt1) << "\n";  // Necati kisisinin 20 kitabi var
 
 	//----------------------------------------------------------------------------------------------
 
@@ -27,8 +27,8 @@ int main()
 
 	string name2{ "Necati" };
 	int cnt2{ 20 };
-	std::cout << std::format("{1} kisisinin {0} kitabi var", cnt2, name2) << "\n"; // Necati kisisinin 20 kitabi var
-	std::cout << std::format("{} kisisinin {} kitabi var", cnt2, name2) << "\n"; // 20 kisisinin Necati kitabi var
+	std::cout << std::format("{1} isimli kisinin {0} kitabi var", cnt2, name2) << "\n"; // Necati kisisinin 20 kitabi var
+	std::cout << std::format("{} isimli kisinin {} kitabi var", cnt2, name2) << "\n"; // 20 kisisinin Necati kitabi var
 
 	//----------------------------------------------------------------------------------------------
 
@@ -38,6 +38,6 @@ int main()
 	//----------------------------------------------------------------------------------------------
 
 	int z = 47802;
-	std::cout << format("{0:b} {0:X} {0:d} {0:o}", z);
+	std::cout << format("{0:b} {0:X} {0:#X} {0:d} {0:o}", z);
 	// 1011101010111010 BABA 47802 135272
 }
