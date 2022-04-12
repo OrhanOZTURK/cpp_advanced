@@ -1,5 +1,3 @@
-#include <iostream>
-
 struct Data{
 	int x,y;
 	struct Nested {
