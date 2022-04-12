@@ -7,7 +7,5 @@ int main()
 {
 	using namespace std;
 	
-	ipair<double>;
-	
-	ipair p{ 1,2.3 }; // Valid at C++20
+	ipair p{ 1,2.3 }; // Valid at C++20 => ipair<double>
 }
