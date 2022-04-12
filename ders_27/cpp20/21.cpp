@@ -1,3 +1,5 @@
+#include <type_traits>
+
 class Myclass {
 public:
 	Myclass(Myclass&&) = default;
