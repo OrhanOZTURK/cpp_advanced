@@ -11,14 +11,14 @@ int main()
 
 	//--------------------------------------------------------------------------------
 
-	Nec n3{ 1,2.2,3 }; // Warning : Possible loss of data
+	Nec n3{ 1, 2.2, 3 }; // invalid : Possible loss of data (narrowing conversion)
 
-	Nec n4(1, 2.2, 3); // Warning : Possible loss of data
+	Nec n4(1, 2.2, 3); // Warning : Possible loss of data (narrowing conversion)
 
-	//--------------------------------------------------------------------------------
+	////--------------------------------------------------------------------------------
 
 	Nec n5(.b = 6); // Invalid C++17/C++20
-	
-	Nec n5{ .b = 6 }; // Valid at C++20. Invalid at C++17
+
+	Nec n6{ .b = 6 }; // Valid at C++20. Invalid at C++17
 
 }
