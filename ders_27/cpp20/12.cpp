@@ -1,4 +1,3 @@
-#include <iostream>
 #include <vector>
 
 class Nec
@@ -13,12 +12,13 @@ int main()
 {
 	for (auto x : get_nec().get_values()) // DANGLING REFERENCE UNDEFINED BEHAVIOR
 	{
+		//...
 	}
 
 	
 	for (auto necx = get_nec(); auto item : necx.get_values()) // RANGE BASE FOR LOOP.VALID C++20
 	{
-		//..
+		//...
 
 	}
 }
