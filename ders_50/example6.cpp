@@ -2,7 +2,7 @@
 #include <iostream>
 #include <stdexcept>
 
-int main()  // tek thread kullanacağız bu örnekte
+int main()
 {
 	std::promise<int> prom;
 	std::future<int> ftr = prom.get_future();
