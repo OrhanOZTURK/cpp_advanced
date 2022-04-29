@@ -22,7 +22,7 @@ int main()
 
 	try {
 		std::thread t{ func };  // Burada exception gönderiliyor ama yakalanmıyor.
-								// Doğrudan std::terminate çağrılıyor.
+					// Doğrudan std::terminate çağrılıyor.
 		t.join();
 	}
 	catch (const std::exception& ex)
