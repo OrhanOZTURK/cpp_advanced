@@ -26,5 +26,5 @@ int main()
 	for (auto& t : ar_t)
 		t.join();
 
-	std::cout << counter << " kez arttirma islemi yapilabildi.\n";
+	std::cout << counter << " kere arttirma islemi yapilabildi.\n";
 }
