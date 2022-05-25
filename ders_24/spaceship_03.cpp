@@ -6,10 +6,9 @@ private:
 	int m_id;
 public:
 	constexpr Wrapper(int i)noexcept : m_id(i) { }
-	auto operator <=>(const Wrapper& other)const = default;	// C++20 Spaceship operator
-								
-
+	auto operator <=>(const Wrapper& other)const = default;	// C++20 spaceship operator
 };
+
 int main()
 {
 	Wrapper x{ 234 }, y{ 526 };
