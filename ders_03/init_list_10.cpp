@@ -1,14 +1,15 @@
 #include <initializer_list>
-#include <vector>
+#include <iostream>
 
-void foo(int);
+void foo(int x)
+{
+	std::cout << x << " ";
+}
 
 int main()
 {
-	int x, y, z;
-	
-	std::vector<int> vec{ x, y, z, 20, 50 };
-	//...
-	for (auto i : {2, 3, 5, 7, 11, 13})
+	int x{1}, y{3}, z{5};
+
+	for (auto i : { x, y, z, 7, 11, 13 })
 		foo(i);
 }
